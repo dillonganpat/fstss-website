@@ -72,13 +72,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .eyebrow::before { content: ""; width: 22px; height: 2px; background: var(--gold); display: inline-block; border-radius: 2px; }
 
-.site-header::before {
-  content: "";
-  display: block;
-  height: 4px;
-  background: linear-gradient(90deg, var(--green), var(--teal), var(--purple), var(--red), var(--gold));
-}
-
 .site-header {
   position: sticky;
   top: 0;
@@ -94,6 +87,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   padding: 14px 24px;
   max-width: 1120px;
   margin: 0 auto;
+  position: relative;
 }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
 .brand-mark {
@@ -149,13 +143,14 @@ nav.primary-nav a[aria-current="page"] .idx { color: var(--gold); }
 
 @media (max-width: 860px) {
   nav.primary-nav {
-    position: fixed; inset: 65px 0 auto 0;
+    position: absolute; top: 100%; left: 0; right: 0;
     background: var(--paper); border-bottom: 1px solid var(--line-soft);
     flex-direction: column; padding: 10px;
-    transform: translateY(-110%); transition: transform 0.25s ease;
+    transform: translateY(-8px); opacity: 0; pointer-events: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
     box-shadow: var(--shadow);
   }
-  nav.primary-nav.open { transform: translateY(0); }
+  nav.primary-nav.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
   nav.primary-nav a { padding: 14px 18px; font-size: 15px; border-radius: var(--radius-sm); }
   .nav-toggle { display: flex; }
 }
