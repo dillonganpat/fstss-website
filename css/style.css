@@ -161,12 +161,25 @@ nav.primary-nav a[aria-current="page"] .idx { color: var(--gold); }
 }
 
 .hero { padding: 72px 0 44px; position: relative; }
-.home-banner-img {
+.home-banner-wrap {
   width: 100%;
-  height: auto;
+  overflow: hidden;
   border-radius: var(--radius);
   margin-bottom: 56px;
+  aspect-ratio: 2 / 1;
+}
+.home-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
   display: block;
+}
+@media (max-width: 640px) {
+  .home-banner-wrap { aspect-ratio: 4 / 3; }
+}
+@media (max-width: 420px) {
+  .home-banner-wrap { aspect-ratio: 1 / 1; }
 }
 
 .hero h1 {
