@@ -155,6 +155,17 @@ nav.primary-nav a[aria-current="page"] { background: var(--blue); color: #fff; }
 
 /* ---- Hero ---- */
 .hero { padding: 72px 0 44px; position: relative; }
+.hero-photo {
+  padding: 96px 32px 64px;
+  margin: 0 -24px 0;
+  background: linear-gradient(180deg, rgba(11,12,14,0.55), rgba(11,12,14,0.92)), url('../assets/hero-building.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+@media (min-width: 1168px) {
+  .hero-photo { margin: 0; border-radius: var(--radius); }
+}
 .hero h1 {
   font-family: var(--font-display); font-weight: 700;
   font-size: clamp(2.3rem, 5.5vw, 3.9rem); line-height: 1.03; letter-spacing: -0.01em;
@@ -164,6 +175,30 @@ nav.primary-nav a[aria-current="page"] { background: var(--blue); color: #fff; }
 .hero h1 em { font-style: normal; color: var(--blue); }
 .hero p.lede { max-width: 58ch; font-size: 1.1rem; color: var(--text-dim); margin: 0 0 28px; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* ---- Tagline banner ---- */
+.tagline-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--glow);
+  padding: 28px 32px;
+  margin: 32px 0 56px;
+}
+.tagline-banner-logo {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 3px var(--blue-soft);
+}
+.tagline-name { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--blue); }
+.tagline-sub { margin: 2px 0 10px; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.06em; color: var(--text-dim); }
+.tagline-slogan { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: 1rem; color: var(--text); }
+@media (max-width: 560px) {
+  .tagline-banner { flex-direction: column; align-items: flex-start; text-align: left; padding: 24px; }
+}
 
 /* ---- Buttons ---- */
 .btn {
@@ -208,29 +243,6 @@ nav.primary-nav a[aria-current="page"] { background: var(--blue); color: #fff; }
 .empty-state {
   border: 1.5px dashed var(--line-strong); padding: 32px; text-align: center; border-radius: var(--radius);
   font-family: var(--font-mono); font-size: 13px; color: var(--text-mute); margin-bottom: 64px;
-}
-
-/* ---- Home banner ---- */
-.home-banner-wrap {
-  width: 100%;
-  overflow: hidden;
-  border-radius: var(--radius);
-  margin-bottom: 56px;
-  aspect-ratio: 2 / 1;
-  box-shadow: var(--glow);
-}
-.home-banner-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: left center;
-  display: block;
-}
-@media (max-width: 640px) {
-  .home-banner-wrap { aspect-ratio: 4 / 3; }
-}
-@media (max-width: 420px) {
-  .home-banner-wrap { aspect-ratio: 1 / 1; }
 }
 
 /* ---- About ---- */
