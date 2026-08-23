@@ -318,8 +318,18 @@ nav.primary-nav a[aria-current="page"] { background: var(--blue); color: #fff; }
 .resource-list li:hover { box-shadow: var(--glow-hover); transform: translateY(-2px); }
 .resource-list a {
   display: flex; justify-content: space-between; align-items: center; gap: 16px;
-  padding: 20px 22px; text-decoration: none; color: var(--text);
+  padding: 16px 22px; text-decoration: none; color: var(--text);
 }
+.r-icon {
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  background: var(--blue-soft);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: var(--blue);
+}
+.r-icon svg { width: 22px; height: 22px; }
+.r-text { display: flex; align-items: center; gap: 14px; flex: 1; min-width: 0; }
 .resource-list .r-name { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; color: var(--text); }
 .resource-list .r-desc { font-size: 13px; color: var(--text-mute); font-family: var(--font-body); display: block; margin-top: 4px; }
 .resource-list .r-go { font-family: var(--font-mono); font-size: 11px; color: var(--blue); white-space: nowrap; }
