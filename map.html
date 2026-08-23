@@ -36,13 +36,21 @@
     <p class="lede">The full UWI St. Augustine campus map. Zoom in below, or download it to view offline.</p>
   </section>
 
-  <div class="map-frame">
-    <embed src="assets/sta_map.pdf" type="application/pdf">
-    <p class="map-fallback">Your browser can't display the PDF inline. <a href="assets/sta_map.pdf" target="_blank" rel="noopener">Open it in a new tab instead</a>.</p>
+  <div class="map-note">Note: the buttons below zoom the map in and out. Once zoomed, scroll or drag inside the frame to pan around.</div>
+
+  <div class="map-zoom-frame" id="mapFrame">
+    <img id="mapImg" src="assets/map-hires.jpg" alt="UWI St. Augustine campus map">
+  </div>
+
+  <div class="map-zoom-controls">
+    <button id="zoomOut" aria-label="Zoom out">&minus;</button>
+    <span class="zoom-label" id="zoomLabel">100%</span>
+    <button id="zoomIn" aria-label="Zoom in">+</button>
+    <button id="zoomReset" aria-label="Reset zoom">&#8635;</button>
   </div>
 
   <div class="map-links">
-    <a href="assets/sta_map.pdf" class="btn" target="_blank" rel="noopener">Open full-size</a>
+    <a href="assets/sta_map.pdf" class="btn" target="_blank" rel="noopener">Open PDF</a>
     <a href="assets/sta_map.pdf" class="btn btn-solid" download>Download PDF</a>
   </div>
 </main>

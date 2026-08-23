@@ -43,3 +43,58 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>`;
   }).join('');
 });
+
+// ---- map zoom controls (map.html) ----
+document.addEventListener('DOMContentLoaded', () => {
+  const img = document.getElementById('mapImg');
+  const frame = document.getElementById('mapFrame');
+  const label = document.getElementById('zoomLabel');
+  const zoomIn = document.getElementById('zoomIn');
+  const zoomOut = document.getElementById('zoomOut');
+  const zoomReset = document.getElementById('zoomReset');
+  if (!img || !frame) return;
+
+  let scale = 100;
+  const MIN = 100, MAX = 400, STEP = 50;
+
+  function applyZoom() {
+    img.style.width = scale + '%';
+    label.textContent = scale + '%';
+  }
+
+  zoomIn.addEventListener('click', () => {
+    scale = Math.min(MAX, scale + STEP);
+    applyZoom();
+  });
+  zoomOut.addEventListener('click', () => {
+    scale = Math.max(MIN, scale - STEP);
+    applyZoom();
+  });
+  zoomReset.addEventListener('click', () => {
+    scale = 100;
+    applyZoom();
+    frame.scrollTo(0, 0);
+  });
+
+  // click-and-drag panning on desktop
+  let isDown = false, startX, startY, scrollLeft, scrollTop;
+  frame.addEventListener('mousedown', (e) => {
+    isDown = true;
+    frame.style.cursor = 'grabbing';
+    startX = e.pageX - frame.offsetLeft;
+    startY = e.pageY - frame.offsetTop;
+    scrollLeft = frame.scrollLeft;
+    scrollTop = frame.scrollTop;
+  });
+  frame.addEventListener('mouseleave', () => { isDown = false; frame.style.cursor = 'grab'; });
+  frame.addEventListener('mouseup', () => { isDown = false; frame.style.cursor = 'grab'; });
+  frame.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - frame.offsetLeft;
+    const y = e.pageY - frame.offsetTop;
+    frame.scrollLeft = scrollLeft - (x - startX);
+    frame.scrollTop = scrollTop - (y - startY);
+  });
+  frame.style.cursor = 'grab';
+});
