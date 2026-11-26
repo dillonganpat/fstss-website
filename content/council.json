@@ -1,0 +1,220 @@
+[
+  {
+    "group": "Executive",
+    "members": [
+      {
+        "name": "Nirvana Kandhai",
+        "role": "President",
+        "degree": "BSc Computer Science (Special)",
+        "interests": "Reading, Painting, Sleeping",
+        "photo": "nirvana.jpg"
+      },
+      {
+        "name": "Danielle Massiah",
+        "role": "Vice-President",
+        "degree": "BSc Biomedical Technology (Special)",
+        "interests": "Traveling, Photography, Public Speaking",
+        "photo": "danielle.jpg"
+      },
+      {
+        "name": "Farad Ramdath",
+        "role": "Public Relations Officer",
+        "degree": "BSc Physics",
+        "interests": "Videography, Astronomy, Movies",
+        "photo": "farad.jpg"
+      },
+      {
+        "name": "Britney Muralie",
+        "role": "Club Coordinator",
+        "degree": "BSc Information Technology",
+        "interests": "Gym, singing, console gaming, UI/UX design, reading",
+        "photo": "britney.jpg"
+      },
+      {
+        "name": "Gregory Look Kin",
+        "role": "Treasurer",
+        "degree": "BSc Actuarial Science (Special)",
+        "interests": "Table tennis, strength training, speed cubing",
+        "photo": "gregory.jpg"
+      },
+      {
+        "name": "Tyrese James-Phillips",
+        "role": "Treasurer",
+        "degree": "BSc Computer Science",
+        "interests": "Water sports and swimming, first aid, photography",
+        "photo": "tyrese.jpg"
+      },
+      {
+        "name": "Seline Phillip",
+        "role": "Events Coordinator",
+        "degree": "BSc Biochemistry",
+        "interests": "Baking & reading",
+        "photo": "seline.jpg"
+      },
+      {
+        "name": "Vishal Pooran",
+        "role": "Outreach Officer",
+        "degree": "BSc Actuarial Science",
+        "interests": "Gym, running, football, mathematics, gardening",
+        "photo": "vishal.jpg"
+      },
+      {
+        "name": "Kryston Farrell",
+        "role": "Outreach Officer",
+        "degree": "BSc Computer Science (Special)",
+        "interests": "Music, exploring, gaming, reading, old movies, programming",
+        "photo": "kryston.jpg"
+      },
+      {
+        "name": "Chad Deonarine Singh",
+        "role": "Publications Officer",
+        "degree": "BSc Computer Science & Management",
+        "interests": "Calisthenics, swimming, drawing, graphic design, gaming",
+        "photo": "chad.jpg"
+      },
+      {
+        "name": "Zoe Searles",
+        "role": "Deputy Public Relations Officer & Deputy Publications Officer",
+        "degree": "BSc Environmental Science & Sustainable Technology (Special)",
+        "interests": "Crafting, music, hair braiding",
+        "photo": "zoe.jpg"
+      },
+      {
+        "name": "Stefan Ambrose",
+        "role": "Volunteer Liaison",
+        "degree": "BSc Actuarial Science (Special)",
+        "interests": "Track and field & guitar playing",
+        "photo": "stefan.jpg"
+      },
+      {
+        "name": "Sanjaya Deonanan",
+        "role": "Returning Officer",
+        "degree": "BSc Computer Science (Special)",
+        "interests": "Baking, cooking, reading, graphic design, tutoring",
+        "photo": "sanjaya.jpg"
+      },
+      {
+        "name": "Aneesa Mitchell",
+        "role": "Secretary",
+        "degree": "BSc Computer Science",
+        "interests": "Reading, cars, robotics, music, gaming, hiking, photography",
+        "photo": "aneesa.jpg"
+      },
+      {
+        "name": "Aneisha Sammy",
+        "role": "Events Coordinator",
+        "degree": "BSc Biology with Specialization",
+        "interests": "Playing drums & skateboarding",
+        "photo": "aneisha.jpg"
+      }
+    ]
+  },
+  {
+    "group": "ICT Team",
+    "members": [
+      {
+        "name": "Dillon Ganpat",
+        "role": "ICT Officer, Webpage Developer & Maintenance",
+        "degree": "BSc Computer Science",
+        "interests": "Working out & coding",
+        "photo": "dillon.jpg"
+      },
+      {
+        "name": "Aditi Persad",
+        "role": "ICT Officer, Technician",
+        "degree": "BSc Computer Science",
+        "interests": "Sports, hiking, puzzles",
+        "photo": "aditi.jpg"
+      },
+      {
+        "name": "Remy Francis",
+        "role": "ICT Officer, Technician",
+        "degree": "BSc Computer Science (Special)",
+        "interests": "Hiking & gaming",
+        "photo": "remy.jpg"
+      },
+      {
+        "name": "Tishawn Joseph",
+        "role": "ICT Officer, Webpage Developer & Maintenance",
+        "degree": "BSc Computer Science",
+        "interests": "Football, track and field, gaming, ethical hacking, robotics",
+        "photo": "tishawn.jpg"
+      }
+    ]
+  },
+  {
+    "group": "Departmental Representatives",
+    "members": [
+      {
+        "name": "Dr Rajeev Peyush Nagassar",
+        "role": "Postgraduate Representative",
+        "degree": "Part Time Lecturer. MBBS, DM Microbiology, MHA, Post Grad Dip in Emergency Medicine",
+        "interests": null,
+        "photo": "rajeev.jpg"
+      },
+      {
+        "name": "Carissa Williams",
+        "role": "Physics Representative",
+        "degree": "BSc Physics",
+        "interests": "Painting, Spider-Man, listening to music",
+        "photo": "carissa.jpg"
+      },
+      {
+        "name": "Samaarah Rampaul",
+        "role": "Physics Representative",
+        "degree": "BSc Physics",
+        "interests": "Sudoku, baking, historical fiction, human rights activism",
+        "photo": "samaarah.jpg"
+      },
+      {
+        "name": "Cody Ranger",
+        "role": "Life Sciences Representative",
+        "degree": "BSc Biochemistry and Biology",
+        "interests": "Fitness and health, learning languages",
+        "photo": "cody.jpg"
+      },
+      {
+        "name": "Christian Modeste",
+        "role": "Life Sciences Representative",
+        "degree": "BSc Environmental Science and Sustainable Technology (Special)",
+        "interests": "Football, chess, music, distance running",
+        "photo": "christian.jpg"
+      },
+      {
+        "name": "Ajay Rampersad",
+        "role": "Chemistry Representative",
+        "degree": "BSc Chemistry",
+        "interests": "Writing, reading, games, hiking, music",
+        "photo": "ajay.jpg"
+      },
+      {
+        "name": "Elizabeth Ramkissoon",
+        "role": "Evening and Part-Time Representative",
+        "degree": "BSc Biology (Microbiology & Biotechnology)",
+        "interests": "Scientific research, fiction reading, gaming, anime, hiking",
+        "photo": "elizabeth.jpg"
+      },
+      {
+        "name": "Amardath Ramsook",
+        "role": "Computing & Information Technology Representative",
+        "degree": "BSc Computer Science",
+        "interests": "Football, gaming, coding, traveling, legos, PC stuff",
+        "photo": "amardath.jpg"
+      },
+      {
+        "name": "Emmanuel Dyette",
+        "role": "Computing & Information Technology Representative",
+        "degree": "BSc Computer Science",
+        "interests": "Reading, music, writing, gaming, coding",
+        "photo": "emmanuel.jpg"
+      },
+      {
+        "name": "Kerisse Titre",
+        "role": "Mathematics & Statistics Representative",
+        "degree": "BSc Actuarial Science (Special)",
+        "interests": "Reading, tap dancing, movies, trying new restaurants, day trading",
+        "photo": "kerisse.jpg"
+      }
+    ]
+  }
+]
