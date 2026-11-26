@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import EventList from "@/components/EventList";
 import { resources } from "@/content/links";
@@ -9,16 +8,8 @@ export default function Home() {
   return (
     <>
       <section className="relative mt-8 overflow-hidden rounded-3xl border border-line">
-        <Image
-          src="/assets/home-banner.jpg"
-          alt="UWI St. Augustine Faculty of Science and Technology"
-          width={1800}
-          height={900}
-          priority
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/70 to-bg/30" aria-hidden="true" />
-        <div className="relative px-6 pb-12 pt-32 sm:px-12 sm:pt-44">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(37,99,235,0.35),transparent_60%)]" aria-hidden="true" />
+        <div className="relative px-6 pb-12 pt-20 sm:px-12 sm:pt-28">
           <p className="text-xs font-semibold uppercase tracking-[0.14em] text-brand">{site.campus}</p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
             Faculty of Science and Technology <span className="text-brand">Student Society</span>
